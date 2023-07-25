@@ -14,6 +14,7 @@
 
     /* Primary */
     --clr-primary-100: hsl(206, 40%, 30%);
+    --clr-primary-200: hsl(206, 35%, 36%);
     --clr-primary-400: hsl(206, 100%, 53%);
 
     /* Accent */
@@ -480,9 +481,14 @@ header .hero {
 
 .project-card__title {
     font-size: var(--fs-400);
-    font-weight: var(--fw-regular);
+    font-weight: var(--fw-bold);
     color: var(--clr-primary-100);
     text-decoration: underline;
+}
+
+.project-card__title:hover {
+    transition: color .35s;
+    color: var(--clr-primary-400);
 }
 
 .project-card__subtitle {
@@ -499,18 +505,26 @@ header .hero {
 
 .project-card__tools .pill {
     font-size: var(--fs-300);
-    background-color: var(--clr-primary-100);
+    background-color: var(--clr-primary-200);
     color: var(--clr-neutral-900);
 }
 
 @media screen and (min-width: 768px) {
+    .projects .section-content {
+        grid-template-columns: 1fr 1fr;
+        column-gap: var(--space-600);
+    }
+
+    .project-card {
+        align-items: center;
+    }
+
     .projects .section-header {
         text-align: center;
         align-items: center;
     }
 
-    .projects .section-content {
-        grid-template-columns: 1fr 1fr;
-        column-gap: var(--space-600);
+    .project-card__tools {
+        flex-wrap: wrap;        
     }
 }
