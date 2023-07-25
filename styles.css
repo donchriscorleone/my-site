@@ -460,6 +460,13 @@ header .hero {
     display: grid;
 }
 
+.projects .section-subtitle .ig-magnet {
+    color: var(--clr-primary-400);
+    font-weight: var(--fw-bold);
+    text-decoration: underline;
+    transition: color .5s;
+}
+
 .projects .section-content {
     display: grid;
     justify-items: center;
