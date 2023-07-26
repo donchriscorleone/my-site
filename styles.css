@@ -511,6 +511,7 @@ header .hero {
 
 .project-card__tools {
     display: flex;
+    flex-wrap: wrap;
     gap: var(--space-300);
     margin-top: var(--space-400);
 }
