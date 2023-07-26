@@ -521,6 +521,16 @@ header .hero {
     color: var(--clr-neutral-900);
 }
 
+.project-card__tools .project-card__repo {
+    align-self: center;
+    margin-left: auto;
+    --icon-color: var(--clr-primary-200);
+}
+
+.project-card__tools .project-card__repo:hover {
+    --icon-color: var(--clr-primary-400);
+}
+
 @media screen and (min-width: 768px) {
     .projects .section-content {
         grid-template-columns: 1fr 1fr;
