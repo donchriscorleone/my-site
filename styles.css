@@ -26,6 +26,8 @@
     --clr-neutral-300: hsl(0, 3%, 30%);
     --clr-neutral-400: hsl(0, 0%, 62%);
     --clr-neutral-900: hsl(0, 0%, 90%);
+    --clr-neutral-950: hsl(0, 0%, 95%);
+
 
     /* Spacing */
     --space-200: 8px;
@@ -60,7 +62,7 @@ html {
 
 body {
     font-family: var(--ff-inter);
-    background-color: var(--clr-neutral-900);
+    /* background-color: var(--clr-neutral-900); */
     min-height: 100vh;
 }
 
@@ -237,7 +239,7 @@ header .hero {
         right: 0;
         margin: 0 auto;
         z-index: 99;
-        background-color: var(--clr-neutral-900);
+        background-color: white;
         width: 100%;
         max-width: 950px;
     }
@@ -474,16 +476,19 @@ header .hero {
 }
 
 .project-card {
-    padding: var(--space-500);
     border-radius: var(--br-400);
     box-shadow: var(--shadow-100);
     display: grid;
-    gap: var(--space-400);
     max-width: 350px;
 }
 
 .project-card__header img {
     border-radius: var(--br-400);
+}
+
+.project-card__content {
+    padding: var(--space-500);
+    align-self: flex-end;
 }
 
 .project-card__title {
@@ -524,6 +529,7 @@ header .hero {
 
     .project-card {
         align-items: center;
+        gap: var(--space-400);
     }
 
     .projects .section-header {
